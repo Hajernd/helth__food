@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- تعريف نوع المستند (HTML5) -->
+<html lang="ar" dir="rtl">
+<!-- عنصر html يُحدد لغة الصفحة (العربية) واتجاه النص (من اليمين إلى اليسار) -->
+<head>
+    <meta charset="UTF-8">
+    <!-- تحديد ترميز الأحرف ليكون UTF-8 لدعم النصوص العربية -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- إعداد عرض الصفحة لتكون مناسبة لجميع الأجهزة والشاشات -->
+    <title>صفحة المنتجات</title>
+    <!-- عنوان الصفحة الذي يظهر في تبويب المتصفح -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ربط ملف HTML بملف CSS خارجي لتنسيق الصفحة -->
+</head>
+<body>
+    <!-- بداية جسم الصفحة -->
+
+    <!-- الشريط العلوي -->
+    <!-- عنصر التنقل يحتوي على شعار الموقع وروابط الصفحات -->
+<nav class="navbar">
+    <!-- يحتوي على الشعار -->
+    <div class="logo-container">
+        <!-- إضافة صورة الشعار -->
+        <img src="./images/logo.png" alt="شعار الموقع" class="logo">
+    </div>
+    <!-- قائمة الروابط الرئيسية للموقع -->
+    <ul class="nav-links">
+        <li><a href="Home.html">الرئيسية</a></li>
+        <!-- رابط يؤدي إلى صفحة الرئيسية -->
+        <li><a href="About.html">من نحن</a></li>
+        <!-- رابط يؤدي إلى صفحة من نحن -->
+        <li><a href="Products.html">المنتجات</a></li>
+        <!-- رابط يؤدي إلى صفحة المنتجات -->
+        <li><a href="Contactus.html">تواصل معنا</a></li>
+        <!-- رابط يؤدي إلى صفحة تواصل معنا -->
+         <button id="darkModeBtn">🌙</button>
+    </ul>
+    <!-- صورة المستخدم في الشريط العلوي -->
+    <div class="user-container">
+        <img src="./images/user.png" alt="المستخدم" class="user-image">
+    </div>
+</nav>
+
+    <!-- قسم المنتجات -->
+    <!-- قسم مخصص لعرض المنتجات المتاحة -->
+    <section class="section-products">
+        <!-- عنوان رئيسي لقسم المنتجات -->
+        <h2>المنتجات</h2>
+        <!-- شبكة تحتوي على قائمة المنتجات -->
+        <div class="products-grid">
+            <!-- عنصر منتج يحتوي على صورة، اسم المنتج، وسعره -->
+            <div class="product-item">
+                <img src="./images/pexels-dana-tentis-118658-1213710.jpg" alt="وصفة 3">
+                <!-- اسم المنتج -->
+                <h3>منتج 1</h3>
+                <!-- السعر الخاص بالمنتج -->
+                <p>السعر: 50 دينار</p>
+                <!-- أزرار الإجراءات الخاصة بالمنتج (إضافة للعربة والمفضلة) -->
+                <div class="product-actions">
+                    <button class="add-to-cart">إضافة إلى العربة</button>
+                    <button class="add-to-favorites">♥ إضافة إلى المفضلة</button>
+                </div>
+            </div>
+
+            <!-- عنصر منتج آخر -->
+            <div class="product-item">
+                <img src="./images/pexels-dana-tentis-118658-1213710.jpg" alt="وصفة 3">
+                <h3>منتج 2</h3>
+                <p>السعر: 35 دينار</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">إضافة إلى العربة</button>
+                    <button class="add-to-favorites">♥ إضافة إلى المفضلة</button>
+                </div>
+            </div>
+
+            <!-- عنصر منتج ثالث -->
+            <div class="product-item">
+                <img src="./images/pexels-dana-tentis-118658-1213710.jpg" alt="وصفة 3">
+                <h3>منتج 3</h3>
+                <p>السعر: 45 دينار</p>
+                <div class="product-actions">
+                    <button class="add-to-cart">إضافة إلى العربة</button>
+                    <button class="add-to-favorites">♥ إضافة إلى المفضلة</button>
+                </div>
+            </div>
+
+            <!-- يمكنك إضافة المزيد من المنتجات هنا -->
+            <!-- هذا هو المكان لإضافة عناصر جديدة للمنتجات -->
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <!-- قسم الفوتر يحتوي على النص الخاص بحقوق الملكية -->
+    <footer>
+        <p>© 2024 موقع الأكل الصحي. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

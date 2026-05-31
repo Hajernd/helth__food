@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الأكل الصحي</title>
+    <!-- استدعاء أيقونات الفونت أوسوم -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- استدعاء ملف التنسيق الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- الشريط العلوي -->
+<nav class="navbar">
+    <!-- شعار الموقع -->
+    <div class="logo-container">
+        <img src="./images/logo.png" alt="شعار الموقع" class="logo">
+    </div>
+    <!-- روابط التنقل الرئيسية -->
+    <ul class="nav-links">
+        <li><a href="Home.html">الرئيسية</a></li>
+        <li><a href="About.html">من نحن</a></li>
+        <li><a href="Products.html">المنتجات</a></li>
+        <li><a href="Contactus.html">تواصل معنا</a></li>
+        <button id="darkModeBtn">🌙</button>
+    </ul>
+    <!-- صورة المستخدم -->
+    <div class="user-container">
+        <img src="./images/user.png" alt="المستخدم" class="user-image">
+    </div>
+    
+</nav>
+
+<!-- قسم الفيديو الرئيسي -->
+<div class="video-section">
+    <!-- خلفية الفيديو -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="./intor.mp4" type="video/mp4">
+        <!-- رسالة تظهر إذا لم يدعم المتصفح الفيديو -->
+        متصفحك لا يدعم الفيديو
+    </video>
+    <!-- تراكب النص فوق الفيديو -->
+    <div class="overlay">
+        <h1 class="fade-in">مرحبًا بكم في موقع الأكل الصحي</h1>
+        <p class="fade-in delay-1">تجربة صحية وطعام مميز لتحسين نمط حياتك</p>
+    </div>
+</div>
+
+<!-- السكشن 1 - فكرة الموقع -->
+<section class="section-idea">
+    <h2>فكرة الموقع</h2>
+    <div class="idea-content">
+        <!-- النص الرئيسي لفكرة الموقع -->
+        <div class="text-section">
+            <p>
+                موقعنا يهدف إلى تقديم تجربة فريدة لعشاق الطعام الصحي. نؤمن بأن الطعام هو مفتاح الصحة،
+                ولذا نقدم مجموعة من الوصفات الصحية المتنوعة والمعدّة بمكونات طبيعية تساعدك في الحفاظ على 
+                صحتك البدنية والعقلية. هدفنا هو مساعدتك على تحسين أسلوب حياتك الغذائي مع مراعاة
+                التوازن بين الطعم والفائدة.
+            </p>
+            <p>
+                نحن نقدم نصائح متخصصة حول كيفية اختيار المكونات المثالية لكل وجبة، بالإضافة إلى برامج غذائية 
+                تتناسب مع احتياجاتك اليومية، سواء كنت تبحث عن خسارة الوزن أو زيادة النشاط أو دعم المناعة.
+            </p>
+        </div>
+        <!-- مجموعة الصور المكدسة -->
+        <div class="image-stack">
+            <img src="./images/pexels-dana-tentis-118658-1213710.jpg" alt="طعام صحي 1" class="stack-img">
+            <img src="./images/pexels-foodie-factor-162291-566566.jpg" alt="طعام صحي 2" class="stack-img">
+            <img src="./images/pexels-janetrangdoan-1099680.jpg" alt="طعام صحي 3" class="stack-img">
+        </div>
+    </div>
+</section>
+
+<!-- السكشن 2 - الفوائد الصحية -->
+<section class="section-benefits">
+    <h2>فوائد الطعام الصحي</h2>
+    <div class="benefits-grid">
+        <!-- فوائد الطعام الصحي -->
+        <div class="benefit-item">
+            <i class="fas fa-bolt"></i>
+            <p>زيادة الطاقة والنشاط</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-utensils"></i>
+            <p>تحسين الهضم</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-shield-virus"></i>
+            <p>دعم المناعة</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-heartbeat"></i>
+            <p>تحسين صحة القلب</p>
+        </div>
+    </div>
+</section>
+
+<!-- السكشن 3 - آخر الوصفات -->
+<section class="section-latest-recipes">
+    <h2>آخر الوصفات</h2>
+    <div class="recipe-grid">
+        <!-- عرض الوصفات مع إمكانية إضافتها إلى السلة -->
+        <div class="recipe-item">
+            <img src="./images/pexels-suzyhazelwood-1120575.jpg" alt="وصفة 1">
+            <h3>وصفة 1</h3>
+            <p>سعر: 25 دينار</p>
+            <div class="actions">
+                <button class="cart-btn">إضافة إلى السلة</button>
+                <button class="fav-btn"><i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+        <!-- وصفة أخرى -->
+        <div class="recipe-item">
+            <img src="./images/pexels-suzyhazelwood-1120575.jpg" alt="وصفة 2">
+            <h3>وصفة 2</h3>
+            <p>سعر: 30 دينار</p>
+            <div class="actions">
+                <button class="cart-btn">إضافة إلى السلة</button>
+                <button class="fav-btn"><i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+        <!-- المزيد من الوصفات -->
+        <div class="recipe-item">
+            <img src="./images/pexels-janetrangdoan-1092730.jpg" alt="وصفة 3">
+            <h3>وصفة 3</h3>
+            <p>سعر: 40 دينار</p>
+            <div class="actions">
+                <button class="cart-btn">إضافة إلى السلة</button>
+                <button class="fav-btn"><i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- السكشن 4 - شهادات العملاء -->
+<section class="section-testimonials">
+    <h2>شهادات عملائنا</h2>
+    <div class="testimonials-container">
+        <!-- عرض شهادات العملاء -->
+        <div class="testimonial-item">
+            <img src="./images/user2.png" alt="محمد" class="testimonial-image">
+            <p class="testimonial-quote">"تجربة رائعة، الطعام لذيذ وصحي!"</p>
+            <h3 class="testimonial-name">محمد</h3>
+        </div>
+        <div class="testimonial-item">
+            <img src="./images/user.png" alt="هبه" class="testimonial-image">
+            <p class="testimonial-quote">"أنصح الجميع باتباع وصفات هذا الموقع."</p>
+            <h3 class="testimonial-name">هبه</h3>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- تعريف نوع المستند (HTML5) -->
+<html lang="ar" dir="rtl">
+<!-- عنصر html يستخدم لتعريف لغة الصفحة (العربية) والاتجاه (من اليمين إلى اليسار) -->
+<head>
+    <meta charset="UTF-8">
+    <!-- تحديد الترميز كـ UTF-8 لدعم النصوص العربية -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- إعداد العرض لتناسب جميع أحجام الشاشات -->
+    <title>اتصل بنا</title>
+    <!-- عنوان الصفحة الذي يظهر في تبويب المتصفح -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- ربط صفحة HTML بملف CSS لتنسيق التصميم -->
+</head>
+<body>
+    <!-- بداية جسم الصفحة -->
+
+    <!-- الشريط العلوي -->
+    <!-- ترويسة الصفحة الرئيسية تتضمن الشعار وقوائم الروابط -->
+    <nav class="navbar">
+        <!-- عنصر يحتوي على الشعار -->
+        <div class="logo-container">
+            <!-- إضافة صورة الشعار -->
+            <img src="./images/logo.png" alt="شعار الموقع" class="logo">
+        </div>
+        <!-- قائمة الروابط الأساسية للموقع -->
+        <ul class="nav-links">
+            <li><a href="Home.html">الرئيسية</a></li>
+            <!-- رابط يؤدي إلى صفحة الرئيسية -->
+            <li><a href="About.html">من نحن</a></li>
+            <!-- رابط يؤدي إلى صفحة من نحن -->
+            <li><a href="Products.html">المنتجات</a></li>
+            <!-- رابط يؤدي إلى صفحة المنتجات -->
+            <li><a href="Contactus.html">تواصل معنا</a></li>
+            <!-- رابط يؤدي إلى صفحة تواصل معنا -->
+             <button id="darkModeBtn">🌙</button>
+        </ul>
+        <!-- إضافة صورة المستخدم -->
+        <div class="user-container">
+            <img src="./images/user.png" alt="المستخدم" class="user-image">
+        </div>
+    </nav>
+
+    <!-- صورة الرأسية -->
+    <!-- قسم يحتوي على صورة الرأسية والعنوان -->
+    <header class="contact-header">
+        <!-- صورة توضيحية لرأس الصفحة -->
+        <img src="./images/pexels-janetrangdoan-1099680.jpg" alt="اتصل بنا" class="header-image">
+        <!-- عنوان الصفحة الرئيسي -->
+        <h1>اتصل بنا</h1>
+    </header>
+
+    <!-- قسم اتصل بنا -->
+    <!-- قسم مخصص لنموذج الاتصال مع النص التوضيحي -->
+    <section class="contact-section">
+        <h2>نحن هنا لمساعدتك</h2>
+        <!-- عنوان فرعي يوضح غرض القسم -->
+        <p>إذا كانت لديك أي استفسارات أو تحتاج إلى مساعدة، لا تتردد في التواصل معنا. يمكنك ملء النموذج أدناه أو التواصل عبر الوسائل الأخرى المتاحة.</p>
+        <!-- فقرة توضيحية عن كيفية التواصل مع الموقع -->
+        
+        <!-- نموذج الاتصال -->
+        <!-- إنشاء نموذج HTML لجمع بيانات المستخدم -->
+        <form class="contact-form">
+         
+
+            <!-- حقل لإدخال الاسم الكامل -->
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- حقل لإدخال البريد الإلكتروني -->
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- حقل لإدخال الرسالة -->
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <!-- زر إرسال النموذج -->
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <!-- الفوتر -->
+    <!-- قسم الفوتر الذي يحتوي على الحقوق -->
+    <footer>
+        <p>© 2024 موقع الأكل الصحي. جميع الحقوق محفوظة.</p>
+        <!-- نص حقوق الملكية -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
